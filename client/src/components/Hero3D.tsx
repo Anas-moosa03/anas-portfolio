@@ -1,7 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import { OrbitControls, Sphere, Icosahedron, MeshDistortMaterial, Torus } from "@react-three/drei";
-import { FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
 import * as THREE from "three";
@@ -114,14 +113,6 @@ export default function Hero3D() {
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Explore Projects
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full sm:w-auto text-base border-primary/50 hover:bg-primary/10"
-              >
-                <FileText className="mr-2 h-4 w-4" />
-                Download CV
               </Button>
             </div>
           </motion.div>

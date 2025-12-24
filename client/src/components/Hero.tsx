@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, FileText } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import abstractBg from "@assets/generated_images/abstract_data_visualization_background_with_teal_and_blue_nodes.png";
 
@@ -42,15 +42,6 @@ export default function Hero() {
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Projects
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full sm:w-auto text-base"
-                onClick={() => window.open('/assets/cv.pdf', '_blank')} 
-              >
-                <FileText className="mr-2 h-4 w-4" />
-                Download CV
               </Button>
             </div>
           </motion.div>

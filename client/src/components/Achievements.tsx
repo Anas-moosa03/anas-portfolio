@@ -34,8 +34,63 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-24 bg-gradient-to-b from-background via-secondary/10 to-background">
-      <div className="container mx-auto px-6">
+    <>
+        <section id="profile" className="py-20">
+          <div className="container mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-8"
+            >
+              <div className="max-w-6xl mx-auto">
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="overflow-hidden border-primary/30 glow bg-gradient-to-br from-card via-secondary/20 to-card">
+                    <div className="flex flex-col lg:flex-row items-stretch">
+                      {/* Image column (left on large screens) */}
+                      <div className="lg:w-1/3 bg-transparent">
+                        <div className="h-80 lg:h-full lg:min-h-[360px] w-full overflow-hidden">
+                          <img
+                            src={profileImg}
+                            alt="Anas Moosa"
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Info column (right) */}
+                      <div className="lg:w-2/3 p-6 flex flex-col justify-center">
+                        <h3 className="text-3xl md:text-4xl font-bold mb-2">Anas Moosa</h3>
+                        <p className="text-primary font-semibold mb-6 text-lg">AI Engineer & Data Scientist</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl">
+                          <div>
+                            <p className="text-sm text-muted-foreground">University</p>
+                            <p className="font-medium">University of Jordan</p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-muted-foreground">Degree</p>
+                            <p className="font-medium">Bachelor in Data Science</p>
+                          </div>
+                          <div className="sm:col-span-2">
+                            <p className="text-sm text-muted-foreground">Location</p>
+                            <p className="font-medium">Abu Dhabi, UAE</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+      <section id="achievements" className="py-24 bg-gradient-to-b from-background via-secondary/10 to-background">
+        <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,49 +104,13 @@ export default function Achievements() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Profile Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="lg:col-span-1"
-          >
-            <Card className="overflow-hidden border-primary/30 glow bg-gradient-to-br from-card via-secondary/20 to-card h-full">
-              <div className="p-6">
-                <div className="relative mb-6 overflow-hidden rounded-lg border-2 border-primary/40 bg-gradient-to-b from-secondary/20 to-background">
-                  <img 
-                    src={profileImg} 
-                    alt="Anas Moosa"
-                    className="w-full h-80 object-contain object-center p-2"
-                  />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Anas Moosa</h3>
-                <p className="text-primary font-semibold mb-4">AI Engineer & Data Scientist</p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-sm text-muted-foreground">University</p>
-                    <p className="font-medium">University of Jordan</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Degree</p>
-                    <p className="font-medium">Bachelor in Data Science</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Abu Dhabi, UAE</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-
+        <div className="grid grid-cols-1 gap-8 mb-16">
           {/* Awards Grid */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 flex flex-col gap-6"
+            className="flex flex-col gap-6"
           >
             {achievements.map((achievement, index) => (
               <motion.div
@@ -138,7 +157,7 @@ export default function Achievements() {
               <img 
                 src={innovationAwardImg} 
                 alt="Innovation and Technology for People with Disability - 1st Place"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -200,5 +219,6 @@ export default function Achievements() {
         </div>
       </div>
     </section>
+    </>
   );
 }

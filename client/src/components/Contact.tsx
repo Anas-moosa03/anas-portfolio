@@ -28,7 +28,7 @@ export default function Contact() {
                 <div className="w-14 h-14 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow glow">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-xl font-medium">+971 55 353 2119</span>
+                <span className="text-xl font-medium">+971 50 501 1322</span>
               </div>
               
               <div className="flex items-center justify-center space-x-4 text-foreground group">
