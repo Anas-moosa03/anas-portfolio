@@ -23,6 +23,15 @@ const projects = [
     image: aiSignsImg
   },
   {
+    title: "Roads Segmentation",
+    description: "Advanced semantic segmentation model using U-Net, DeepLabV3+, and DinkNet for extracting road networks from satellite and aerial imagery. Achieves F1 scores up to 0.925 using hybrid loss functions and systematic data augmentation.",
+    tags: ["Semantic Segmentation", "Deep Learning", "Computer Vision", "Python"],
+    achievement: "University Project - High Performance Results",
+    github: "https://github.com/Anas-moosa03",
+    image: roadsSegmentationImg,
+    pdf: "/road_segmentation.pdf"
+  },
+  {
     title: "Data Analytics & Business Intelligence",
     description: "Comprehensive Power BI dashboards for analyzing key business metrics and performance indicators. Visualizes complex data relationships with interactive charts, KPIs, and actionable insights for data-driven decision making.",
     tags: ["Power BI", "Data Visualization", "Business Analytics", "Dashboard Design"],
@@ -31,13 +40,11 @@ const projects = [
     image: powerBiImg
   },
   {
-    title: "Roads Segmentation",
-    description: "Advanced semantic segmentation model using U-Net, DeepLabV3+, and DinkNet for extracting road networks from satellite and aerial imagery. Achieves F1 scores up to 0.925 using hybrid loss functions and systematic data augmentation.",
-    tags: ["Semantic Segmentation", "Deep Learning", "Computer Vision", "Python"],
-    achievement: "University Project - High Performance Results",
-    github: "https://github.com/Anas-moosa03",
-    image: roadsSegmentationImg,
-    pdf: "https://drive.google.com/file/d/1738933529774_1766475904811.pdf"
+    title: "Arabic Sentiment Analysis",
+    description: "NLP model for analyzing online market reviews in Arabic using Python and sklearn. Achieved strong predictive performance on Arabic text classification.",
+    tags: ["NLP", "Sentiment Analysis", "Python", "Sklearn"],
+    github: "https://github.com/Anas-moosa03/Evolving-Arabic-Sentiment-Analysis",
+    image: sentimentImg
   },
   {
     title: "EDU Planner",
@@ -55,17 +62,9 @@ const projects = [
     image: mobilePriceImg
   },
   {
-    title: "Arabic Sentiment Analysis",
-    description: "NLP model for analyzing online market reviews in Arabic using Python and sklearn. Achieved strong predictive performance on Arabic text classification.",
-    tags: ["NLP", "Sentiment Analysis", "Python", "Sklearn"],
-    achievement: "AI & Its Applications Competition",
-    github: "https://github.com/Anas-moosa03/Evolving-Arabic-Sentiment-Analysis",
-    image: sentimentImg
-  },
-  {
     title: "Fetal Health Classification",
-    description: "Deep learning classification system for fetal health monitoring. Deployed with Flutter frontend and Docker containerization for mobile accessibility.",
-    tags: ["Deep Learning", "Flutter", "Docker", "Healthcare"],
+    description: "Deep learning classification system for fetal health monitoring. Deployed with Flask frontend and Docker containerization for mobile accessibility.",
+    tags: ["Deep Learning", "Flask", "Docker", "Healthcare"],
     github: "https://github.com/Anas-moosa03/Fetal-Health-Classification--Using-Flutter-Docker",
     image: fetalImg
   }

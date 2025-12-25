@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero3D from "@/components/Hero3D";
+import Profile from "@/components/Profile";
 import Experience from "@/components/Experience";
 import Achievements from "@/components/Achievements";
 import Skills from "@/components/Skills";
@@ -12,10 +13,11 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero3D />
-        <Achievements />
-        <Experience />
-        <Skills />
+        <Profile />
         <Projects />
+        <Achievements />
+        <Skills />
+        <Experience />
         <Contact />
       </main>
     </div>

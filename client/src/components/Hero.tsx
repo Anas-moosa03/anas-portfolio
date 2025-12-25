@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import abstractBg from "@assets/generated_images/abstract_data_visualization_background_with_teal_and_blue_nodes.png";
+import abstractBg from "@assets/generated_images/my_photo.jpg";
 
 export default function Hero() {
   return (
@@ -13,6 +13,7 @@ export default function Hero() {
           src={abstractBg} 
           alt="Abstract Background" 
           className="w-full h-full object-cover opacity-50"
+          style={{ objectPosition: 'top' }}
         />
       </div>
 
